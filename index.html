@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caleidoscopia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="nav">
+      <a href="#universo">UNIVERSO</a>
+      <a href="#nosotros">NOSOTROS</a>
+      <a href="#inicio" class="nav__logo" aria-label="Inicio">
+        <img class="logo--1" src="data/img/logo-1.svg" alt="Logo de Caleidoscopia">
+        <img class="logo--2" src="data/img/logo-2.svg" alt="" aria-hidden="true">
+      </a>
+      <a href="#instalacion">INSTALACION</a>
+      <a href="#transmedia">TRANSMEDIA</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+
+    <!-- SECCIÓN 1: BIENVENIDA -->
+    <section class="bienvenida">
+      <div class="bienvenida__contenido">
+        <h1 class="titulo">
+          <span class="titulo__chico">bienvenidos a</span>
+          <span class="titulo__grande">Caleidoscopia</span>
+        </h1>
+        <p class="bienvenida__texto">
+          Cada año, festejamos el aniversario que conmemora el nacimiento de
+          Caleidoscopia en el año 2126, ocurrido durante el cierre del
+          multitudinario festival "Samsara" en la Patagonia. Mientras sonaban los
+          últimos acordes de Los Tejedores del Velo, un clímax de euforia
+          colectiva disolvió las barreras individuales de los asistentes, dando
+          origen a una unidad sin precedentes que inauguró un nuevo paradigma
+          basado en la paz cotidiana, la tecnología al servicio del bienestar común
+          y la música como latido esencial de unión.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: DISCURSO -->
+    <section class="discurso">
+      <div class="discurso__texto">
+        <h2>DISCURSO</h2>
+        <p>
+          El mensaje de Caleidoscopia es que la humanidad puede vivir en armonía
+          si deja atrás el individualismo y pone el arte, la empatía y la
+          tecnología al servicio de todos. Nace de la idea de que, gracias a la
+          conexión emocional que genera la música, las personas pueden unirse sin
+          perder su esencia, haciendo de la paz y el cuidado mutuo algo natural de
+          todos los días.
+        </p>
+      </div>
+      <img class="discurso__personajes" src="data/img/dibujo1.png"
+        alt="Ilustración de los personajes de Caleidoscopia con sus instrumentos">
+    </section>
+
+    <!-- SECCIÓN 3: IMÁGENES -->
+    <section class="imagenes">
+      <img src="data/img/dibujo2.png" alt="Ilustración con instrumentos y bola de espejos">
+      <img src="data/img/dibujo3.png" alt="Ilustración con rayos de luz naranjas">
+      <img src="data/img/dibujo4.png" alt="Ilustración con notas musicales y un corazón">
+    </section>
+
+    <!-- SECCIÓN 4: LINE-UP TRANSMEDIAS -->
+    <section class="lineup" id="transmedia">
+      <h2 class="lineup__titulo">LINE-UP TRANSMEDIAS</h2>
+
+      <ul class="lineup__lista">
+        <li><a href="#slide-flyers">FLYERS</a></li>
+        <li><a href="#slide-pagina-web">PAGINA WEB</a></li>
+        <li><a href="#slide-reel-maquillaje">REEL DE MAQUILLAJE FT. NEUROMUSIC</a></li>
+        <li><a href="#slide-reel-musica">REEL DE MUSICA FT. DIADEMA DE MUSGO</a></li>
+        <li><a href="#slide-nyra">NYRA</a></li>
+        <li><a href="#slide-minijuego-web">MINIJUEGO WEB</a></li>
+        <li><a href="#slide-espejo-caleidoscopico">ESPEJO CALEIDOSCOPICO</a></li>
+        <li><a href="#slide-dressmaker">DRESSMAKER</a></li>
+        <li><a href="#slide-mural">MURAL</a></li>
+        <li><a href="#slide-perfo-maquillaje-peinados">PERFORMANCE MAQUILLAJE Y PEINADOS</a></li>
+      </ul>
+
+      <div class="carrusel" data-carrusel>
+        <div class="carrusel__tarjeta">
+          <div class="carrusel__pista" tabindex="0" role="region" aria-label="Piezas transmedia">
+
+            <article class="slide" id="slide-flyers" data-titulo="Flyers" role="group"
+              aria-roledescription="diapositiva" aria-label="1 de 10">
+              <img src="data/img/flyer1.png" alt="Flyers, foto 1">
+              <img src="data/img/flyer2.png" alt="Flyers, foto 2">
+              <img src="data/img/flyer3.png" alt="Flyers, foto 3">
+              <img src="data/img/flyer4.png" alt="Flyers, foto 4">
+              <img src="data/img/flyer5.png" alt="Flyers, foto 5">
+              <div class="slide__texto">
+                <h3>FLYERS</h3>
+                <p>Un flyer tipo festival para expandir nuestro universo por la ciudad, recorriendo Plaza San Martín y
+                  los alrededores de la facultad.</p>
+              </div>
+            </article>
+
+            <article class="slide" id="slide-pagina-web" data-titulo="Pagina web"
+              data-enlace="https://caleidoscopia.github.io/festival/"
+              data-enlace-texto="Ingresar a web del Festival Samsara" role="group" aria-roledescription="diapositiva"
+              aria-label="2 de 10">
+              <img src="data/img/web1.png" alt="Pagina web, foto 1">
+              <img src="data/img/web2.png" alt="Pagina web, foto 2">
+              <div class="slide__texto">
+                <h3>PAGINA WEB</h3>
+                <p>Página web inspirada en portales digitales de festivales de la vida real.</p>
+              </div>
+            </article>
+
+            <article class="slide" id="slide-reel-maquillaje" data-titulo="Reel de maquillaje ft. neuromusic"
+              role="group" aria-roledescription="diapositiva" aria-label="3 de 10">
+              <img src="data/img/makeup1.png" alt="Reel de maquillaje ft. neuromusic, foto 1">
+              <img src="data/img/makeup2.png" alt="Reel de maquillaje ft. neuromusic, foto 2">
+              <img src="data/img/makeup3.png" alt="Reel de maquillaje ft. neuromusic, foto 3">
+              <div class="slide__texto">
+                <h3>REEL DE MAQUILLAJE FT. NEUROMUSIC</h3>
+                <p>En nuestra cuenta de instagram hicimos un video con un tutorial de maquillaje para acudir al
+                  festival. Con aparición especial de neuromusic, un accesorio propio de nuestro universo.</p>
+              </div>
+            </article>
+
+            <article class="slide" id="slide-reel-musica" data-titulo="Reel de musica ft. diadema de musgo" role="group"
+              aria-roledescription="diapositiva" aria-label="4 de 10">
+              <img src="data/img/top1.png" alt="Reel de musica ft. diadema de musgo, foto 1">
+              <img src="data/img/top2.png" alt="Reel de musica ft. diadema de musgo, foto 2">
+              <div class="slide__texto">
+                <h3>REEL DE MUSICA FT. DIADEMA DE MUSGO</h3>
+                <p>Top de canciones de los 60's, en el video se utiliza un accesorio característico de Caleidoscopia,
+                  la diadema de musgo.</p>
+              </div>
+            </article>
+
+            <article class="slide" id="slide-nyra" data-titulo="Nyra" role="group" aria-roledescription="diapositiva"
+              aria-label="5 de 10">
+              <img src="data/img/nyra1.png" alt="Nyra, foto 1">
+              <img src="data/img/nyra2.png" alt="Nyra, foto 2">
+              <div class="slide__texto">
+                <h3>NYRA</h3>
+                <p>Musgo que crece sobre las superficies y funciona, para quienes puedan verlo, como señal de que el
+                  festival de Samsara se acerca y es momento de sanar todo lo posible para poder disfrutarlo
+                  plenamente.</p>
+              </div>
+            </article>
+
+            <article class="slide" id="slide-minijuego-web" data-titulo="Minijuego web"
+              data-enlace="https://caleidoscopia.github.io/Yayantra/" data-enlace-texto="Jugar al minijuego"
+              role="group" aria-roledescription="diapositiva" aria-label="6 de 10">
+              <img src="data/img/juego1.png" alt="Minijuego web, foto 1">
+              <img src="data/img/juego2.png" alt="Minijuego web, foto 2">
+              <div class="slide__texto">
+                <h3>YAYANTRA</h3>
+                <p>Es un videojuego que introduce a los usuarios a los sonidos propios del universo.</p>
+              </div>
+            </article>
+
+            <article class="slide" id="slide-espejo-caleidoscopico" data-titulo="Espejo caleidoscopico" role="group"
+              aria-roledescription="diapositiva" aria-label="7 de 10">
+              <img src="data/img/espejo1.png" alt="Espejo caleidoscopico, foto 1">
+              <img src="data/img/espejo2.png" alt="Espejo caleidoscopico, foto 2">
+              <div class="slide__texto">
+                <h3>ESPEJO CALEIDOSCOPICO</h3>
+                <p>Espejo con pizarra, fibrones y stickers con un CTA “Intervenime” en Sede Fonseca..</p>
+              </div>
+            </article>
+
+            <article class="slide" id="slide-dressmaker" data-titulo="Dressmaker" role="group"
+              aria-roledescription="diapositiva" aria-label="8 de 10">
+              <img src="data/img/dressmaker1.png" alt="Dressmaker, foto 1">
+              <img src="data/img/dressmaker2.png" alt="Dressmaker, foto 2">
+              <img src="data/img/dressmaker3.png" alt="Dressmaker, foto 3">
+              <div class="slide__texto">
+                <h3>DRESSMAKER</h3>
+                <p>Un juego físico e ilustrado, hecho a mano, donde vestís la silueta de un personaje de
+                  Caleidoscopia.</p>
+              </div>
+            </article>
+
+            <article class="slide" id="slide-mural" data-titulo="Mural" role="group" aria-roledescription="diapositiva"
+              aria-label="9 de 10">
+              <img src="data/img/mural1.png" alt="Mural, foto 1">
+              <img src="data/img/mural2.png" alt="Mural, foto 2">
+              <div class="slide__texto">
+                <h3>MURAL</h3>
+                <p>Mural pintado sobre tela. Fue colgado en la sede Fonseca para llevar la identidad y el clima del
+                  universo a un espacio público y llamar la atención de quienes pasaron por ahí.</p>
+              </div>
+            </article>
+
+            <article class="slide" id="slide-perfo-maquillaje-peinados" data-titulo="Perfo maquillaje y peinados"
+              role="group" aria-roledescription="diapositiva" aria-label="10 de 10">
+              <img src="data/img/stand1.png" alt="Perfo maquillaje y peinados, foto 1">
+              <img src="data/img/stand2.png" alt="Perfo maquillaje y peinados, foto 2">
+              <div class="slide__texto">
+                <h3>PERFORMANCE MAQUILLAJE Y PEINADOS</h3>
+                <p>Performance inmersiva que recrea los rituales de maquillaje y peinado característicos de los
+                  festivales, invitando a los participantes a intervenir su imagen en Sede Fonseca.</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="carrusel__controles">
+          <button type="button" class="carrusel__flecha" data-prev aria-label="Anterior">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M15 5l-7 7 7 7" />
+            </svg>
+          </button>
+          <div class="carrusel__puntos"></div>
+          <button type="button" class="carrusel__flecha" data-next aria-label="Siguiente">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 5: INSTALACIÓN  -->
+    <section class="instalacion" id="instalacion">
+      <h2 class="instalacion__titulo">INSTALACION</h2>
+
+      <p class="instalacion__texto">
+        La instalación donde cobró vida el universo que desarrollamos durante el año tomó la
+        forma de un concierto en vivo, con instrumentos y sonidos propios de Caleidoscopia.
+      </p>
+
+      <div class="instalacion__escena">
+        <img class="personaje personaje--izq" src="data/img/pj1.png" alt="Personaje de Caleidoscopia">
+        <img class="instalacion__foto" src="data/img/instalacion.png"
+          alt="La instalación armada como un escenario, con telas, luces y plantas">
+        <img class="personaje personaje--der" src="data/img/pj2.png" alt="Personaje de Caleidoscopia">
+      </div>
+
+      <p class="instalacion__texto">
+        En Caleidoscopia, la música es el hilo conductor que une a sus habitantes. Al entender
+        que ese era el corazón de nuestra propuesta, enfocamos todo nuestro trabajo en recrear
+        una atmósfera de festival: un espacio de celebración, encuentro y disfrute compartido.
+      </p>
+
+      <div class="videos" data-videos>
+        <div class="videos__pista" tabindex="0" role="region" aria-label="Videos de la instalación">
+
+          <article class="video" data-titulo="Video 1" role="group" aria-roledescription="diapositiva"
+            aria-label="1 de 3">
+            <video src="data/video/instalacion-1.mp4#t=0.1" preload="metadata" playsinline></video>
+            <button type="button" class="video__play" aria-label="Reproducir video 1">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </button>
+          </article>
+
+          <article class="video" data-titulo="Video 2" role="group" aria-roledescription="diapositiva"
+            aria-label="2 de 3">
+            <video src="data/video/instalacion-2.mp4#t=0.1" preload="metadata" playsinline></video>
+            <button type="button" class="video__play" aria-label="Reproducir video 2">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </button>
+          </article>
+
+          <article class="video" data-titulo="Video 3" role="group" aria-roledescription="diapositiva"
+            aria-label="3 de 3">
+            <video src="data/video/instalacion-3.mp4#t=0.1" preload="metadata" playsinline></video>
+            <button type="button" class="video__play" aria-label="Reproducir video 3">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </button>
+          </article>
+
+        </div>
+
+        <div class="carrusel__controles_videos">
+          <button type="button" class="carrusel__flecha" data-prev aria-label="Anterior">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M15 5l-7 7 7 7" />
+            </svg>
+          </button>
+          <div class="carrusel__puntos"></div>
+          <button type="button" class="carrusel__flecha" data-next aria-label="Siguiente">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 6: NOSOTROS -->
+
+    <section class="nosotros" id="nosotros">
+      <h2 class="nosotros__titulo">NOSOTROS</h2>
+
+      <figure class="polaroid">
+        <div class="polaroid__marco">
+          <img src="data/img/equipo/nosotros.png" alt="Foto grupal del equipo en la instalación">
+          <figcaption>Muestra Fragmentos <span>2026</span></figcaption>
+        </div>
+      </figure>
+
+      <ul class="equipo">
+        <li class="persona">
+          <span class="persona__foto persona__foto--vacia" aria-hidden="true"></span>
+          <p class="persona__nombre">Almada, Sofía</p>
+          <p class="persona__rol">Producción</p>
+        </li>
+        <li class="persona">
+          <img class="persona__foto" src="data/img/equipo/avril.png" alt="Foto de Fernandez Cabrera, Avril">
+          <p class="persona__nombre">Fernandez Cabrera, Avril</p>
+          <p class="persona__rol">Escenografía</p>
+        </li>
+        <li class="persona">
+          <img class="persona__foto" src="data/img/equipo/pilar.png" alt="Foto de Fernandez, María Pilar">
+          <p class="persona__nombre">Fernandez, María Pilar</p>
+          <p class="persona__rol">Ilustración</p>
+        </li>
+        <li class="persona">
+          <img class="persona__foto" src="data/img/equipo/martina.png" alt="Foto de Fuhr, Martina">
+          <p class="persona__nombre">Fuhr, Martina</p>
+          <p class="persona__rol">Redes</p>
+        </li>
+        <li class="persona">
+          <img class="persona__foto" src="data/img/equipo/abril.png" alt="Foto de Funes, Abril">
+          <p class="persona__nombre">Funes, Abril</p>
+          <p class="persona__rol">Interacción</p>
+        </li>
+        <li class="persona">
+          <img class="persona__foto" src="data/img/equipo/ian.png" alt="Foto de Urbañski, Ian">
+          <p class="persona__nombre">Urbañski, Ian</p>
+          <p class="persona__rol">Hardware</p>
+        </li>
+        <li class="persona">
+          <img class="persona__foto" src="data/img/equipo/juan.png" alt="Foto de Lehue, Juan">
+          <p class="persona__nombre">Lehue, Juan</p>
+          <p class="persona__rol">Sonido</p>
+        </li>
+        <li class="persona">
+          <span class="persona__foto persona__foto--vacia" aria-hidden="true"></span>
+          <p class="persona__nombre">Ventimiglia, Juan Ignacio</p>
+          <p class="persona__rol">Software</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__contenido">
+      <div class="footer__fila">
+        <a href="#inicio" class="footer__marca">Caleidoscopia</a>
+        <a href="https://www.instagram.com/somos.caleidoscopiatdm3/" class="footer__instagram" target="_blank"
+          rel="noopener">INSTAGRAM</a>
+      </div>
+
+      <hr class="footer__linea">
+
+      <div class="footer__fila">
+        <p class="footer__copy">Caleidoscopia, Inc.</p>
+        <img class="footer__icono" src="data/img/t.svg" alt="Logo">
+      </div>
+    a</div>
+  </footer>
+
+  <!-- BOTÓN VOLVER ARRIBA -->
+  <button type="button" class="volver-arriba" aria-label="Volver al inicio">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M6 15l6-6 6 6" />
+    </svg>
+  </button>
+
+  <!-- ENLACES JAVASCRIPT -->
+  <script src="volver-arriba.js"></script>
+  <script src="tarjetas.js"></script>
+  <script src="instalacion.js"></script>
+
+</body>
+
+</html>
