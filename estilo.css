@@ -546,6 +546,18 @@ a {
     outline-offset: 3px;
 }
 
+.video img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.video[data-sin-sonido] video::-webkit-media-controls-mute-button,
+.video[data-sin-sonido] video::-webkit-media-controls-volume-slider {
+    display: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
 
     .slide__boton,
@@ -1624,5 +1636,39 @@ a {
         height: auto;
     }
 
+}
 
+.videos__pista {
+    --alto-media: min(62cqw, 38rem);     /* alto de todos los elementos: subilo o bajalo a gusto */
+    --ancho-max: min(70cqw, 64rem);      /* ancho máximo (para los videos muy horizontales) */
+    align-items: center;                 /* sin esto el navegador estiraría los marcos y volverían las barras */
+}
+
+.video {
+    --ratio: 1.25;                       /* 5:4 hasta que el JS lee la proporción real del archivo */
+    flex: 0 0 auto;
+    width: min(calc(var(--alto-media) * var(--ratio)), var(--ancho-max));
+    aspect-ratio: var(--ratio);
+}
+
+.video img,
+.video video {
+    object-fit: cover;                   /* el marco ya tiene la proporción exacta: llena sin recortar */
+}
+
+/* Espacios laterales: los calcula el JS según el ancho real del primero y del último */
+.videos__pista::before {
+    content: "";
+    flex: 0 0 var(--espacio-inicio, 0px);
+}
+
+.videos__pista::after {
+    content: "";
+    flex: 0 0 var(--espacio-fin, 0px);
+}
+
+@media (max-width: 800px) {
+    .videos__pista {
+        --ancho-max: 82cqw;              /* en celular siempre asoma un poco el elemento siguiente */
+    }
 }
