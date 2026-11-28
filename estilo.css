@@ -1639,13 +1639,13 @@ a {
 }
 
 .videos__pista {
-    --alto-media: min(62cqw, 38rem);     /* alto de todos los elementos: subilo o bajalo a gusto */
-    --ancho-max: min(70cqw, 64rem);      /* ancho máximo (para los videos muy horizontales) */
-    align-items: center;                 /* sin esto el navegador estiraría los marcos y volverían las barras */
+    --alto-media: min(62cqw, 38rem);
+    --ancho-max: min(70cqw, 64rem);
+    align-items: center;
 }
 
 .video {
-    --ratio: 1.25;                       /* 5:4 hasta que el JS lee la proporción real del archivo */
+    --ratio: 1.25;
     flex: 0 0 auto;
     width: min(calc(var(--alto-media) * var(--ratio)), var(--ancho-max));
     aspect-ratio: var(--ratio);
@@ -1653,10 +1653,9 @@ a {
 
 .video img,
 .video video {
-    object-fit: cover;                   /* el marco ya tiene la proporción exacta: llena sin recortar */
+    object-fit: cover;
 }
 
-/* Espacios laterales: los calcula el JS según el ancho real del primero y del último */
 .videos__pista::before {
     content: "";
     flex: 0 0 var(--espacio-inicio, 0px);
@@ -1669,6 +1668,6 @@ a {
 
 @media (max-width: 800px) {
     .videos__pista {
-        --ancho-max: 82cqw;              /* en celular siempre asoma un poco el elemento siguiente */
+        --ancho-max: 82cqw;
     }
 }
